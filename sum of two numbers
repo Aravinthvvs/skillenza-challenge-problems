@@ -1,0 +1,25 @@
+#Problem Statement
+'''Add the sum of two numbers. The input format is like this:
+
+The first line of input consists of a single integer p. This is the number of test cases.
+The next p lines contains two space separated integers a and b.
+There will be p lines of output. For each test case, the output would the result a + b.
+
+Sample input
+2
+2 3
+3 4
+
+Sample output
+5
+7'''
+
+def add(numbers):
+    for inp in range(int(len(numbers)/2)):
+     print(int(numbers[inp])+int(numbers[inp+1]))
+
+numberOfInput = input()
+for i in range(int(numberOfInput)):
+    inputString = input()
+    inputs = inputString.split()
+    add(inputs)
