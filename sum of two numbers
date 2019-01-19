@@ -12,14 +12,9 @@ Sample input
 
 Sample output
 5
-7'''
-
-def add(numbers):
-    for inp in range(int(len(numbers)/2)):
-     print(int(numbers[inp])+int(numbers[inp+1]))
+7
 
 numberOfInput = input()
 for i in range(int(numberOfInput)):
-    inputString = input()
-    inputs = inputString.split()
-    add(inputs)
+    number1,number2 = list(map(int,input().split()))
+    print(number1+number2)
